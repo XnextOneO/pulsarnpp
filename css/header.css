@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #2083d2;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-logo-wrapper > img {
+  height: 35px;
+}
+
+nav {
+  display: flex;
+}
+
+.header-menu > nav > ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+nav > .dropdown > button {
+  padding: 20px 25px 18px;
+}
+
+button:hover {
+  background-color: #0f6ab2;
+}
+
+.header-search-button {
+  background-color: #3790d7;
+  border: none;
+  width: 58px;
+  height: 100%;
+
+  &:hover {
+    background-color: #0f6ab2;
+    cursor: pointer;
+  }
+}
+
+.header-mail-button {
+  text-decoration: none;
+  color: white;
+  padding: 20px 25px 18px;
+
+  &:hover {
+    background-color: #0f6ab2;
+  }
+}
+
+/* Стиль Выпадающей Кнопки */
+.dropbtn {
+  background-color: #2083d2;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0f6ab2;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding: 20px;
+  top: 58px;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #2083d2;
+  padding: 2px 16px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  margin-top: 13px;
+}
+
+.dropdown-content a:hover {
+  border-bottom: 1px solid #2083d2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__drop_block__item {
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: white;
+}
+
+
