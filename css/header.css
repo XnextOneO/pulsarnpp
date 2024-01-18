@@ -121,6 +121,8 @@ button:hover {
   white-space: nowrap;
   margin-top: 13px;
   border-bottom: 1px solid white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
 }
 
 .dropdown-content a:hover {
