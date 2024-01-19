@@ -90,7 +90,8 @@ button:hover {
   border: none;
   cursor: pointer;
   font-family: "Open Sans";
-
+  height: 100%;
+white-space: nowrap;
   &:hover {
     background-color: #0f6ab2;
   }
@@ -122,7 +123,7 @@ button:hover {
   white-space: nowrap;
   margin-top: 13px;
   border-bottom: 1px solid white;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .dropdown-content a:hover {
