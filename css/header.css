@@ -86,9 +86,10 @@ button:hover {
   background-color: #2083d2;
   color: white;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   border: none;
   cursor: pointer;
+  font-family: "Open Sans";
 
   &:hover {
     background-color: #0f6ab2;
@@ -121,7 +122,6 @@ button:hover {
   white-space: nowrap;
   margin-top: 13px;
   border-bottom: 1px solid white;
-  font-family: "Open Sans", sans-serif;
   font-weight: 800;
 }
 

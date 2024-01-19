@@ -43,31 +43,31 @@
 }
 
 .first-block-title  h1 {
-  font-size: 80px;
+  font-size: 68px;
   padding-right: 25px;
   border-right: 1px solid white;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  font-family: 'Roboto';
 }
 
 .first-block-title h3 {
   padding-left: 25px;
   font-size: 20px;
-  font-family: OpenSansSB, sans-serif ;
+  font-family: "Open Sans" ;
+  line-height: 20px;
 }
 
 .first-block-description-one {
   width: 450px;
-  font-family: OpenSansSB;
-  font-weight: 400;
+  font-family: "Open Sans";
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.2;
 }
 .first-block-description-second {
   width: 450px;
-  font-family: OpenSansSB;
-  font-weight: 400;
+  font-family: "Open Sans";
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.2;
 }
@@ -96,10 +96,10 @@
 }
 
 .second-block-content-card {
-  width: 500px;
+  width: 530px;
   display: flex;
   flex-direction: column;
-  padding: 10px 45px;
+  padding: 31px 31px 0;
   background-color: white;
   z-index: 2;
   box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, .05);
@@ -116,12 +116,13 @@
   font-size: 36px;
   color: #2083d2;
   font-weight: 600;
+  margin-bottom: 0;
 }
 
 .card-description {
   font-family: "Open Sans";
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.2;
   color: black;
 }
@@ -133,7 +134,7 @@
   border-bottom: 1px solid #2083d2;
   text-decoration: none;
   font-family: "Open Sans";
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .three-block {
@@ -144,7 +145,7 @@
   justify-content: center;
   align-items: center;
   background-size: cover;
-  background: url("/img/bg1.png") no-repeat center;
+  background: #f5eae3 url("/img/bg1.png") no-repeat center;
 }
 
 .three-block-content {
@@ -155,12 +156,14 @@
   margin: 0;
   align-self: flex-start;
   font-family: "Open Sans";
-  font-size: 50px;
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 .three-block-main-content {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .three-block-left {
