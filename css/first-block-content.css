@@ -284,40 +284,48 @@
     flex-direction: column;
     align-items: stretch;
   }
+
   .first-block-title h3 {
     padding-left: 0;
     padding-top: 10px;
     margin: 0;
   }
+
   .first-block-title h1 {
     padding-right: 0;
     border-right: none;
     padding-bottom: 10px;
   }
+
   .second-block-content-card {
     width: 300px;
     height: 65%;
     padding-bottom: 15px;
   }
+
   .content-first-block p {
     width: 80%;
   }
+
   .content-first-block {
     margin-top: 60px;
   }
+
   .first-block-description-second {
     margin: 0;
   }
+
   .three-block-title {
     padding-left: 50px;
   }
+
   .three-block-main-content {
     padding-left: 50px;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .shema a{
+  .shema a {
     font-size: 12px;
     padding: 5px;
   }
@@ -328,7 +336,105 @@
     width: 250px;
     height: 100px;
   }
+
   .second-block-content-card {
     padding: 5px 5px 20px;
   }
+}
+
+
+/* Path: css/first-block-content.css */
+
+.complex-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f5eae3;
+  flex-direction: column;
+  align-items: center;
+}
+
+.complex-title {
+  font-family: "Open Sans";
+  font-size: 40px;
+  padding: 100px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.complex-title-layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 96, 165, .7);
+  z-index: 2;
+}
+
+.complex-title h1 {
+  color: white;
+  z-index: 3;
+  position: relative;
+  font-size: 44px;
+  font-family: Roboto;
+  white-space: nowrap;
+}
+.complex-title-text-wrapper {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -25px;
+}
+
+.complex-info-wrapper {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 25px;
+  margin-top: -100px;
+  z-index: 30;
+  margin-bottom: 60px;
+}
+
+.complex-img-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Три столбца с равными долями */
+  gap: 10px; /* Расстояние между изображениями */
+}
+
+.complex-img-wrapper img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.complex-info-wrapper ul {
+  list-style: none;
+  padding: 0;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: black;
+}
+
+.complex-info-wrapper ul li::before {
+  content: '\2022';
+  color: #2083d2;
+  font-size: 3.5em;
+  margin-right: 0.1em;
+  vertical-align: middle;
+}
+
+.complex-list {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: black;
 }
