@@ -1,10 +1,17 @@
+
 body {
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 header {
   position: fixed;
   z-index: 998;
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: #2083d2;
   height: 60px;
@@ -17,6 +24,7 @@ header {
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
 }
+
 .header-content {
   display: flex;
   align-items: center;
@@ -91,7 +99,8 @@ button:hover {
   cursor: pointer;
   font-family: "Open Sans";
   height: 100%;
-white-space: nowrap;
+  white-space: nowrap;
+
   &:hover {
     background-color: #0f6ab2;
   }
@@ -145,4 +154,80 @@ white-space: nowrap;
   background: white;
 }
 
+/* Стили для мобильного выпадающего меню */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* Цвет фона по вашему выбору */
+  z-index: 1000;
+}
+
+/* Стили для кнопки закрытия */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Стили для отображения/скрытия кнопки "burger-menu" */
+.burger-menu {
+  display: none;
+  background-color: #2083d2;
+  border: none;
+}
+
+@media screen and (max-width: 1200px) {
+  nav > .dropdown > button {
+    padding: 5px;
+  }
+  .header-logo-wrapper {
+    gap: 5px;
+  }
+
+  .header-mail-button {
+    padding: 0;
+  }
+}
+
+/* Медиа-запрос для мобильных устройств с шириной экрана <= 820px */
+@media only screen and (max-width: 896px) {
+  /* Скрыть обычное меню */
+  .header-menu nav {
+    display: none;
+  }
+
+  .header-mail-button {
+    display: none;
+  }
+
+  /* Показать кнопку "burger-menu" */
+  .burger-menu {
+    display: block;
+  }
+  .close-btn {
+    border: none;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+  ;
+  }
+  nav > .dropdown > button {
+    padding: 10px;
+    background-color: white;
+    color: black;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+}
 

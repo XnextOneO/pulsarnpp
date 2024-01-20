@@ -1,3 +1,4 @@
+
 .first-block {
   position: relative;
   width: 100%;
@@ -12,11 +13,12 @@
   top: 0;
   left: 0;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   height: auto;
   width: auto;
   z-index: -100;
 }
+
 .first-block-layout {
   position: absolute;
   width: 70%;
@@ -42,7 +44,7 @@
   align-items: center;
 }
 
-.first-block-title  h1 {
+.first-block-title h1 {
   font-size: 68px;
   padding-right: 25px;
   border-right: 1px solid white;
@@ -53,7 +55,7 @@
 .first-block-title h3 {
   padding-left: 25px;
   font-size: 20px;
-  font-family: "Open Sans" ;
+  font-family: "Open Sans";
   line-height: 20px;
 }
 
@@ -64,6 +66,7 @@
   font-size: 16px;
   line-height: 1.2;
 }
+
 .first-block-description-second {
   width: 450px;
   font-family: "Open Sans";
@@ -71,10 +74,11 @@
   font-size: 16px;
   line-height: 1.2;
 }
+
 .content-styled-link {
   text-decoration: none;
   color: white;
-  padding: 14px 30px ;
+  padding: 14px 30px;
   border: 1px solid white;
   font-family: OpenSansSB, sans-serif;
   font-size: 18px;
@@ -87,12 +91,13 @@
   justify-content: center;
   background-color: #f5eae3;
 }
+
 .second-block-content {
-  width: 1200px;
   display: flex;
   margin-top: -80px;
   margin-bottom: 75px;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .second-block-content-card {
@@ -104,9 +109,11 @@
   z-index: 2;
   box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, .05);
 }
+
 .test {
   height: 350px;
 }
+
 .test1 {
   height: 300px;
 }
@@ -141,17 +148,16 @@
   color: white;
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-size: cover;
-  background: #f5eae3 url("/img/bg1.png") no-repeat center;
 }
 
 .three-block-content {
   width: 1200px;
 
 }
+
 .three-block-title {
   margin: 0;
   align-self: flex-start;
@@ -160,6 +166,7 @@
   margin-top: 50px;
   margin-bottom: 30px;
 }
+
 .three-block-main-content {
   display: flex;
   justify-content: space-between;
@@ -179,6 +186,7 @@
   height: 5px;
   background-color: white;
 }
+
 .three-block-description {
   font-family: "Open Sans";
   margin-top: 40px;
@@ -203,6 +211,7 @@
   font-weight: 800;
   width: 300px;
   transition: background-color 0.6s ease;
+
   &:hover {
     background-color: #2083d2;
   }
@@ -213,4 +222,111 @@
 }
 
 .three-block-podrobneye {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .second-block-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shemas .shema:nth-child(odd) {
+    margin-left: 0px;
+  }
+
+  .three-block-main-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .first-block-layout {
+    left: -1000px;
+    width: 1600px;
+  }
+
+  .three-block-title {
+    padding-left: 140px;
+  }
+
+  .three-block-main-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 140px;
+  }
+
+  .shema a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .content-first-block {
+    width: 100%;
+    padding-left: 100px;
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .content-first-block {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .first-block-title {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .first-block-title h3 {
+    padding-left: 0;
+    padding-top: 10px;
+    margin: 0;
+  }
+  .first-block-title h1 {
+    padding-right: 0;
+    border-right: none;
+    padding-bottom: 10px;
+  }
+  .second-block-content-card {
+    width: 300px;
+    height: 65%;
+  }
+  .content-first-block p {
+    width: 80%;
+  }
+  .content-first-block {
+    margin-top: 60px;
+  }
+  .first-block-description-second {
+    margin: 0;
+  }
+  .three-block-title {
+    padding-left: 50px;
+  }
+  .three-block-main-content {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .shema a{
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .shema {
+    width: 250px;
+    height: 100px;
+  }
+  .second-block-content-card {
+    padding: 5px;
+  }
 }
