@@ -346,7 +346,6 @@
 /* Path: css/first-block-content.css */
 
 .complex-content {
-  width: 100%;
   display: flex;
   justify-content: center;
   background-color: #f5eae3;
@@ -357,8 +356,8 @@
 .complex-title {
   font-family: "Open Sans";
   font-size: 40px;
-  padding: 100px;
   margin-top: 50px;
+  height: 200px;
   margin-bottom: 30px;
   width: 100%;
   position: relative;
@@ -381,7 +380,6 @@
   position: relative;
   font-size: 44px;
   font-family: Roboto;
-  white-space: nowrap;
 }
 .complex-title-text-wrapper {
   width: 60%;
@@ -399,6 +397,7 @@
   margin-top: -100px;
   z-index: 30;
   margin-bottom: 60px;
+  box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, .1);
 }
 
 .complex-img-wrapper {
@@ -440,4 +439,25 @@
   font-weight: 600;
   line-height: 1.2;
   color: black;
+}
+
+@media screen and (max-width: 570px) {
+  .complex-title-text-wrapper h1 {
+    font-size: 34px;
+  }
+  .complex-img-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Три столбца с равными долями */
+    gap: 10px; /* Расстояние между изображениями */
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .complex-title-text-wrapper h1 {
+    font-size: 24px;
+    padding-top: 20px;
+  }
+  .info-title {
+    font-size: 22px;
+  }
 }
