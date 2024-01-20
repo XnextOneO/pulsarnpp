@@ -91,6 +91,8 @@ button:hover {
 
 /* Стиль Выпадающей Кнопки */
 .dropbtn {
+  display: flex;
+  align-items: center;
   background-color: #2083d2;
   color: white;
   font-size: 16px;

@@ -358,7 +358,7 @@
   font-family: "Open Sans";
   font-size: 40px;
   padding: 100px;
-  margin-top: 80px;
+  margin-top: 50px;
   margin-bottom: 30px;
   width: 100%;
   position: relative;
@@ -422,11 +422,14 @@
   line-height: 1.2;
   color: black;
 }
+.complex-info-wrapper ul li {
+  line-height: 20px;
+}
 
 .complex-info-wrapper ul li::before {
   content: '\2022';
   color: #2083d2;
-  font-size: 3.5em;
+  font-size: 40px;
   margin-right: 0.1em;
   vertical-align: middle;
 }
