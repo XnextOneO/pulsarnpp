@@ -356,12 +356,13 @@
 .complex-title {
   font-family: "Open Sans";
   font-size: 40px;
-  margin-top: 50px;
-  height: 200px;
+  margin-top: 60px;
+  height: 260px;
   margin-bottom: 30px;
   width: 100%;
   position: relative;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -384,14 +385,13 @@
 }
 
 .complex-title-text-wrapper {
-  width: 60%;
+  width: 1200px;
   display: flex;
   justify-content: flex-start;
-  margin-left: -25px;
 }
 
 .complex-info-wrapper {
-  width: 60%;
+  width: 1150px;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -444,11 +444,40 @@
   color: black;
 }
 
+@media screen and (max-width: 1200px){
+.complex-title-text-wrapper {
+  width: 800px;
+}
+  .complex-info-wrapper {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 880px){
+  .complex-title-text-wrapper {
+    width: 500px;
+  }
+  .complex-info-wrapper {
+    width: 500px;
+  }
+}
+
+
 @media screen and (max-width: 570px) {
-  .complex-title-text-wrapper h1 {
-    font-size: 34px;
+  .complex-title-text-wrapper {
+    width: 260px;
+  }
+  .complex-info-wrapper {
+    width: 260px;
   }
 
+  .complex-title-text-wrapper h1 {
+    font-size: 28px;
+  }
+
+  .info-title {
+    font-size: 22px;
+  }
   .complex-img-wrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Три столбца с равными долями */
@@ -675,5 +704,44 @@
   }
   .history-img-wrapper img {
     width: 260px;
+  }
+}
+/*---------нормативные документы----------*/
+.download-doc-btn{
+  display: flex;
+  align-items: center;
+  background-color: #e4e4e4;
+  width: 550px;
+  height: 60px;
+}
+
+.download-btn {
+  background-color: #2083d2;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-btn img {
+  width: 30px;
+}
+
+.download-doc-btn-text {
+  text-align: left;
+  padding: 20px;
+}
+
+.btns-download-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .download-doc-btn {
+    width: 400px;
   }
 }
