@@ -476,7 +476,7 @@
   }
 
   .info-title {
-    font-size: 22px;
+    font-size: 28px;
   }
   .complex-img-wrapper {
     display: grid;
@@ -725,11 +725,19 @@
 
 .download-btn img {
   width: 30px;
+  padding: 20px;
 }
 
 .download-doc-btn-text {
   text-align: left;
   padding: 20px;
+  font-family: "Open Sans";
+  font-weight: 400;
+;
+}
+.download-link {
+  text-decoration: none;
+  color: black;
 }
 
 .btns-download-wrapper {
@@ -742,6 +750,24 @@
 
 @media screen and (max-width: 1200px) {
   .download-doc-btn {
-    width: 400px;
+    width: 800px;
+  }
+  .btns-download-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 880px){
+  .download-doc-btn {
+    width: 500px;
+  }
+  .download-doc-btn-text {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 570px){
+  .download-doc-btn {
+    width: 300px;
   }
 }
