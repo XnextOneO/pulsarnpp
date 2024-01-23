@@ -91,7 +91,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #f5eae3;
+  background-color:#eee;
 }
 
 .second-block-content {
@@ -350,7 +350,7 @@
 .complex-content {
   display: flex;
   justify-content: center;
-  background-color: #f5eae3;
+  background-color: #eee;
   flex-direction: column;
   align-items: center;
 }
@@ -455,6 +455,9 @@
   .complex-info-wrapper {
     width: 800px;
   }
+  .complex-title-layout {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 880px) {
@@ -515,7 +518,7 @@
 .history-page {
   display: flex;
   justify-content: center;
-  background-color: #f5eae3;
+  background-color: #eee;
   flex-direction: column;
   align-items: center;
   z-index: -1;
@@ -574,6 +577,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
+  box-shadow: 0 0 1em 0.3em rgba(0, 0, 0, .1);
 }
 
 .history-card span {
@@ -724,7 +728,7 @@
   align-items: center;
   background-color: #e4e4e4;
   width: 550px;
-  height: 60px;
+  height: 70px;
 }
 
 .download-btn {
@@ -803,7 +807,7 @@
 
 .contacts-info-wrapper {
   width: 100%;
-  background-color: rgb(238, 238, 238);
+  background-color: #eee;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -924,7 +928,7 @@
 
 .career-content-wrapper {
   width: 100%;
-  background-color: rgb(238, 238, 238);
+  background-color: #eee;
   display: flex;
   justify-content: center;
   align-items: center;
