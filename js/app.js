@@ -13,3 +13,20 @@ document.addEventListener('DOMContentLoaded', function () {
     mobileMenu.style.display = 'none';
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  let searchButton = document.getElementById("searchButton");
+  let searchWrapper = document.getElementById("searchWrapper");
+
+  searchButton.addEventListener("click", function() {
+    searchWrapper.style.display = (searchWrapper.style.display === "flex") ? "none" : "flex";
+  });
+
+
+  document.addEventListener("click", function(event) {
+    if (!searchWrapper.contains(event.target) && event.target !== searchButton) {
+      searchWrapper.style.display = "none";
+    }
+  });
+});

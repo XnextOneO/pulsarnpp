@@ -1,4 +1,38 @@
 
+.search-wrapper {
+  margin-top: 124px;
+  margin-left: -328px;
+  background: white;
+  padding: 20px;
+  display: none;
+  align-items: center;
+  gap: 15px;
+
+}
+.search-wrapper input {
+  border: none;
+  border-bottom: 1px solid #2083d2;
+  font-family: "Open Sans";
+  font-size: 16px;
+  outline: none;
+}
+.send-search {
+  border: none;
+  background: none;
+  color: #2083d2;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.send-search:hover {
+  background: none;
+  cursor: pointer;
+}
+
 
 body {
   margin: 0;
@@ -73,7 +107,12 @@ button:hover {
   background-color: #3790d7;
   border: none;
   width: 58px;
+  padding-left: 20px;
+  padding-right: 20px;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     background-color: #0f6ab2;
@@ -198,9 +237,13 @@ button:hover {
   }
 }
 
-/* Медиа-запрос для мобильных устройств с шириной экрана <= 820px */
+
+
+
+
+
+
 @media only screen and (max-width: 896px) {
-  /* Скрыть обычное меню */
   .header-menu nav {
     display: none;
   }
@@ -234,4 +277,6 @@ button:hover {
   }
 
 }
+
+
 
