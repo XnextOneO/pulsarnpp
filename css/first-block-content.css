@@ -407,14 +407,14 @@
 
 .complex-img-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Три столбца с равными долями */
-  gap: 10px; /* Расстояние между изображениями */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .complex-img-wrapper img {
   width: 100%;
-  max-width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .complex-info-wrapper ul {
