@@ -1156,7 +1156,14 @@
   margin-bottom: 20px;
 }
 
-/*-------------------*/
+/*---------science----------*/
 
+.science-style {
+  height: 250px;
+}
 
-
+@media screen and (max-width: 668px){
+  .science-style {
+    height: 400px;
+  }
+}
