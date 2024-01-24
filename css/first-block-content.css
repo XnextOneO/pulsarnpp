@@ -1167,3 +1167,23 @@
     height: 400px;
   }
 }
+
+
+/*--------vakansii-----------*/
+
+.vakansii-style {
+  height: 1000px;
+}
+
+.vakansii-title-style {
+  top: 500px;
+  height: 1000px;
+}
+.vakans p{
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.vakans a {
+  text-decoration: none;
+}
