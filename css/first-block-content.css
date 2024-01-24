@@ -1142,5 +1142,21 @@
   }
 }
 
+/*-------bipolar-transistors--------*/
+
+.bipolar-trans-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bipolar-trans-style {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/*-------------------*/
+
 
 
