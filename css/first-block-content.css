@@ -1187,3 +1187,11 @@
 .vakans a {
   text-decoration: none;
 }
+
+/*------production--------*/
+
+@media screen and (max-width: 570px){
+.prod-style {
+  width: 280px;
+}
+}
