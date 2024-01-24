@@ -148,6 +148,13 @@ button:hover {
     background-color: #0f6ab2;
   }
 }
+.mob-style:hover {
+  background: none;
+}
+
+.mob-style-drop {
+  margin-top: -10px;
+}
 
 .dropdown {
   position: relative;

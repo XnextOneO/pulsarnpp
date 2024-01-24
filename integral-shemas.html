@@ -112,8 +112,8 @@
       </button>
       <nav>
         <div class="dropdown">
-          <button class="dropbtn">О «Пульсаре»</button>
-          <div class="dropdown-content">
+          <button class="dropbtn mob-style">О «Пульсаре»</button>
+          <div class="dropdown-content mob-style-drop">
             <div class="menu__drop_block__item"></div>
             <a href="#">История</a>
             <a href="#">Центр проектирования</a>
@@ -123,16 +123,16 @@
           </div>
         </div>
         <div class="dropdown">
-          <button class="dropbtn">Наука</button>
-          <div class="dropdown-content">
+          <button class="dropbtn mob-style">Наука</button>
+          <div class="dropdown-content mob-style-drop">
             <div class="menu__drop_block__item"></div>
             <a href="#">Научно-технический журнал</a>
             <a href="#">Аспирантура</a>
           </div>
         </div>
         <div class="dropdown">
-          <button class="dropbtn">Продукция</button>
-          <div class="dropdown-content">
+          <button class="dropbtn mob-style">Продукция</button>
+          <div class="dropdown-content mob-style-drop">
             <div class="menu__drop_block__item"></div>
             <a href="#">Полупроводниковые приборы</a>
             <a href="#">Интегральные микросхемы</a>
@@ -141,16 +141,16 @@
           </div>
         </div>
         <div class="dropdown">
-          <button class="dropbtn">Производственный комплекс</button>
-          <div class="dropdown-content">
+          <button class="dropbtn mob-style">Производственный комплекс</button>
+          <div class="dropdown-content mob-style-drop">
             <div class="menu__drop_block__item"></div>
             <a href="#">О комплексе</a>
             <a href="#">Продукция</a>
           </div>
         </div>
         <div class="dropdown">
-          <button class="dropbtn">Карьера</button>
-          <div class="dropdown-content">
+          <button class="dropbtn mob-style">Карьера</button>
+          <div class="dropdown-content mob-style-drop">
             <div class="menu__drop_block__item"></div>
             <a href="#">Вакансии</a>
             <a href="#">Профсоюз</a>
@@ -159,14 +159,21 @@
           </div>
         </div>
         <div class="dropdown">
-          <button class="dropbtn">Контакты</button>
+          <button class="dropbtn mob-style">Контакты</button>
         </div>
       </nav>
     </div>
     <a href="" class="header-mail-button">Почта</a>
-    <button class="header-search-button">
-      <img src="img/search.svg" alt="" style="width: 26px; height: 26px">
+    <button class="header-search-button" id="searchButton">
+      <img ID="searchImg" src="img/search.svg" alt="" style="width: 26px; height: 26px">
     </button>
+    <div class="search-wrapper" id="searchWrapper">
+      <input type="text" placeholder="Поиск">
+      <button class="send-search">
+        Поиск
+        <img src="img/right.svg" alt="" style="width: 10px">
+      </button>
+    </div>
   </div>
 </header>
 <div class="integral-shemas-content">
