@@ -19,14 +19,20 @@ document.addEventListener("DOMContentLoaded", function() {
   let searchButton = document.getElementById("searchButton");
   let searchWrapper = document.getElementById("searchWrapper");
 
-  searchButton.addEventListener("click", function() {
-    searchWrapper.style.display = (searchWrapper.style.display === "flex") ? "none" : "flex";
+  searchButton.addEventListener("click", function(event) {
+    if (event.target === searchButton || event.target === document.getElementById("searchImg")) {
+      toggleSearchWrapper();
+    }
   });
 
-
   document.addEventListener("click", function(event) {
-    if (!searchWrapper.contains(event.target) && event.target !== searchButton) {
+    if (!searchWrapper.contains(event.target) && event.target !== searchButton && event.target !== document.getElementById("searchImg")) {
       searchWrapper.style.display = "none";
     }
   });
+
+  function toggleSearchWrapper() {
+    searchWrapper.style.display = (searchWrapper.style.display === "flex") ? "none" : "flex";
+  }
 });
+
