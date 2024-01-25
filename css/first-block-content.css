@@ -1235,19 +1235,16 @@
   margin-bottom: 40px;
 }
 .menu {
-  width: 200px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-bottom: 60px;
   height: 100vh;
-  padding-right: 10%;
+  padding-right: 5%;
   border-right: 1px solid white;
 }
 
-.menu:nth-child(3) {
-  border: none;
-}
 
 .menu .menLink {
   color: white;
@@ -1255,6 +1252,9 @@
   font-family: "Open Sans";
   font-size: 18px;
   opacity: 1;
+}
+.menu:nth-child(3) {
+  border: none;
 }
 
 .cols-wrapper {
@@ -1266,6 +1266,20 @@
   padding-top: 20px;
 }
 
+#first-col-links a {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+#first-col-links a:hover {
+  background-color: #2083d2;
+}
+#second-col-links {
+  padding-left: 20px;
+}
+#third-col-links {
+  padding-left: 20px;
+}
 
 @media screen and (max-width: 660px){
 .cols-wrapper {
