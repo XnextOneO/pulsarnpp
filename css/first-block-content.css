@@ -1281,11 +1281,14 @@
   padding-left: 20px;
 }
 
+
+
 @media screen and (max-width: 660px){
 .cols-wrapper {
   flex-direction: column;
 }
   .menu{
     border: none;
+    width: 300px;
   }
 }
