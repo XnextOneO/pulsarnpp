@@ -14,6 +14,11 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
+  <!--  jquery-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/app.js"></script>
+
+
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
@@ -30,6 +35,257 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-выфвы
+
+<header>
+  <div class="header-content">
+    <a href="https://xnextoneo.github.io/pulsarnpp">
+      <div class="header-logo-wrapper">
+        <img src="img/logo.png" alt="logo" style="width: 53px;height: 26px">
+        <img src="img/logo1.png" alt="logo">
+      </div>
+    </a>
+    <div class="header-menu">
+      <nav>
+        <div class="dropdown">
+          <button class="dropbtn">О «Пульсаре»</button>
+          <div class="dropdown-content">
+            <div class="menu__drop_block__item"></div>
+            <a href="https://xnextoneo.github.io/pulsarnpp/history.html">История</a>
+            <a href="#">Центр проектирования</a>
+            <a href="#">Испытательный центр</a>
+            <a href="#">Научно-технический центр</a>
+            <a href="https://xnextoneo.github.io/pulsarnpp/regulations-documents.html">Нормативные документы</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"><a href="https://xnextoneo.github.io/pulsarnpp/complex.html"
+                                     style="color: white; text-decoration: none">Наука</a></button>
+          <div class="dropdown-content">
+            <div class="menu__drop_block__item"></div>
+            <a href="#">Научно-технический журнал</a>
+            <a href="#">Аспирантура</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Продукция</button>
+          <div class="dropdown-content">
+            <div class="menu__drop_block__item"></div>
+            <a href="#">Полупроводниковые приборы</a>
+            <a href="#">Интегральные микросхемы</a>
+            <a href="#">Изделия фотоэлектроники</a>
+            <a href="#">Комплексированные изделия</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a href="https://xnextoneo.github.io/pulsarnpp/complex.html" style="color: white; text-decoration: none">Производственный
+              комплекс</a>
+          </button>
+          <div class="dropdown-content">
+            <div class="menu__drop_block__item"></div>
+            <a href="https://xnextoneo.github.io/pulsarnpp/complex.html">О комплексе</a>
+            <a href="#">Продукция</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a href="https://xnextoneo.github.io/pulsarnpp/career.html"
+               style="color: white; text-decoration: none">Карьера
+            </a>
+          </button>
+          <div class="dropdown-content">
+            <div class="menu__drop_block__item"></div>
+            <a href="https://xnextoneo.github.io/pulsarnpp/vakansii.html">Вакансии</a>
+            <a href="#">Профсоюз</a>
+            <a href="#">Молодежь</a>
+            <a href="#">Базовые кафедры</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a href="https://xnextoneo.github.io/pulsarnpp/contacts.html"
+               style="color: white; text-decoration: none">Контакты
+            </a>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <button class="burger-menu">
+      <img src="img/menu.svg" alt="" style="width: 20px">
+    </button>
+    <div class="mobile-menu">
+      <button class="close-btn">
+        <img src="img/close.svg" alt="">
+      </button>
+      <nav>
+        <div class="dropdown">
+          <button class="dropbtn mob-style">О «Пульсаре»</button>
+          <div class="dropdown-content mob-style-drop">
+            <div class="menu__drop_block__item"></div>
+            <a href="#">История</a>
+            <a href="#">Центр проектирования</a>
+            <a href="#">Испытательный центр</a>
+            <a href="#">Научно-технический центр</a>
+            <a href="#">Нормативные документы</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn mob-style">Наука</button>
+          <div class="dropdown-content mob-style-drop">
+            <div class="menu__drop_block__item"></div>
+            <a href="#">Научно-технический журнал</a>
+            <a href="#">Аспирантура</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn mob-style">Продукция</button>
+          <div class="dropdown-content mob-style-drop">
+            <div class="menu__drop_block__item"></div>
+            <a href="#">Полупроводниковые приборы</a>
+            <a href="#">Интегральные микросхемы</a>
+            <a href="#">Изделия фотоэлектроники</a>
+            <a href="#">Комплексированные изделия</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn mob-style">Производственный комплекс</button>
+          <div class="dropdown-content mob-style-drop">
+            <div class="menu__drop_block__item"></div>
+            <a href="#">О комплексе</a>
+            <a href="https://xnextoneo.github.io/pulsarnpp/production.html">Продукция</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn mob-style">Карьера</button>
+          <div class="dropdown-content mob-style-drop">
+            <div class="menu__drop_block__item"></div>
+            <a href="#">Вакансии</a>
+            <a href="#">Профсоюз</a>
+            <a href="#">Молодежь</a>
+            <a href="#">Базовые кафедры</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn mob-style">Контакты</button>
+        </div>
+      </nav>
+    </div>
+    <a href="" class="header-mail-button">Почта</a>
+    <button class="header-search-button" id="searchButton">
+      <img ID="searchImg" src="img/search.svg" alt="" style="width: 26px; height: 26px">
+    </button>
+    <div class="search-wrapper" id="searchWrapper">
+      <input type="text" placeholder="Поиск">
+      <button class="send-search">
+        Поиск
+        <img src="img/right.svg" alt="" style="width: 10px">
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<div class="first-block test-prod-bg">
+
+  <div class="content-first-block prodd">
+    <div class="menu">
+      <a href="#" id="men1" class="menLink">
+        Полупроводниковые приборы
+      </a>
+      <a href="" id="men2">
+        Интегральные микросхемы
+      </a>
+      <a href="" id="men3">
+        Изделия фотоэлектроники
+      </a>
+      <a href="" id="men4">
+        Комплексированные изделия
+      </a>
+    </div>
+    <div class="menu" id="second-col-links">
+    </div>
+    <div class="menu" id="third-col-links">
+    </div>
+  </div>
+  <div class="first-block-layout prod-main-style"></div>
+</div>
+
+
+<footer>
+  <div class="footer-content">
+    <div class="first-row-footer my">
+      <div class="info-block-footer">
+        <a href="" class="footer-title">О «Пульсаре»</a>
+        <div class="footer-block-links">
+          <a href="#">История</a>
+          <a href="#">Центр проектирования</a>
+          <a href="#">Испытательный центр</a>
+          <a href="#">Научно-технический центр</a>
+          <a href="#">Нормативные документы</a>
+        </div>
+      </div>
+      <div class="info-block-footer">
+        <a href="" class="footer-title">Продукция</a>
+        <div class="footer-block-links">
+          <a href="#">Полупроводниковые приборы</a>
+          <a href="#">Интегральные микросхемы</a>
+          <a href="#">Изделия фотоэлектроники</a>
+          <a href="#">Комплексированные изделия</a>
+        </div>
+      </div>
+      <div class="info-block-footer">
+        <a href="" class="footer-title">Карьера</a>
+        <div class="footer-block-links">
+          <a href="#">Вакансии</a>
+          <a href="#">Профсоюз</a>
+          <a href="#">Молодежь</a>
+          <a href="#">Базовые кафедры</a>
+        </div>
+      </div>
+    </div>
+    <div class="first-row-footer">
+      <div class="info-block-footer">
+        <a href="" class="footer-title">Наука</a>
+        <div class="footer-block-links">
+          <a href="#">Научно-технический журнал</a>
+          <a href="#">Аспирантура</a>
+        </div>
+      </div>
+      <div class="info-block-footer">
+        <a href="/complex.html" class="footer-title">Производственный комплекс</a>
+        <div class="footer-block-links">
+          <a href="#">О комплексе</a>
+          <a href="#">Продукция</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-content">
+    <div class="first-row-footer myy">
+      <div class="info-block-footer contacts">
+        <a href="" class="footer-title">Контакты</a>
+        <div class="company-soft-info">
+          <div class="location">
+            <span>Юридический и почтовый адрес:</span>
+            <span>105187, г. Москва, Окружной проезд, дом 27</span>
+          </div>
+          <div class="mobile-email">
+            <span>Тел.: (495)-365-12-30</span>
+            <span>E-mail: administrator@pulsarnpp.ru</span>
+          </div>
+        </div>
+      </div>
+      <img src="img/banner.png" alt="">
+    </div>
+  </div>
+  <div class="footer-last-row">
+    <div class="logo-footer">
+      <img src="img/logo.png" alt="" style="width: 40px">
+      <span>НПП «Пульсар»</span>
+    </div>
+    <span>© 2024 Научно-производственное предприятие «Пульсар»</span>
+  </div>
+</footer>
+
 </body>
 </html>
