@@ -73,37 +73,78 @@ $(document).ready(function () {
 
   processMenu1('#men1', [
     {
-      name: "men1 Link 1", href: "#", subLinks: [
-        {name: "men1 Link 1.1", href: "#"},
-        {name: "men1 Link 1.2", href: "#"},
-        {name: "men1 Link 1.3", href: "#"},
-        {name: "men1 Link 1.4", href: "#"},
-        {name: "men1 Link 1.5", href: "#"},
-      ]
+      name: "Силовые быстродействующие диоды", href: "#", subLinks: []
     },
-    {name: "men1 Link 2", href: "#", subLinks: [{name: "men1 Link 2.1", href: "#"},]},
-    {name: "men1 Link 3", href: "#", subLinks: [{name: "men1 Link 3.1", href: "#"},]},
-    {name: "men1 Link 4", href: "#", subLinks: [{name: "men1 Link 4.1", href: "#"},]},
-    {name: "men1 Link 5", href: "#", subLinks: [{name: "men1 Link 5.1", href: "#"},]},
+    {name: "Быстродействующие диоды", href: "#", subLinks: []},
+    {name: "Биполярные СВЧ транзисторы", href: "#", subLinks: []},
+    {name: "Полевые ВЧ и СВЧ транзисторы ", href: "#", subLinks: []},
+    {
+      name: "Силовые переключательные транзисторы",
+      href: "#",
+      subLinks: [{name: "На основе AIGaN/GaN", href: "#"}, {name: "На основе Si", href: "#"}]
+    },
   ]);
 
   processMenu1('#men2', [
-    {name: "men2 Link 1", href: "#", subLinks: [{name: "men2 Link 1.1", href: "#"},]},
-    {name: "men2 Link 2", href: "#", subLinks: [{name: "men2 Link 2.1", href: "#"},]},
+    {
+      name: "СВЧ МИС", href: "#", subLinks: [{name: "Широкополосные усилители", href: "#"},
+        {name: "Логарифмические детекторы/усилители", href: "#"},
+        {name: "Смесители", href: "#"},
+        {name: "Квадратные модуляторы", href: "#"},
+        {name: "Умножители частоты", href: "#"},
+        {name: "Делители частоты", href: "#"},
+        {name: "Синтезаторы частоты", href: "#"},
+        {name: "Источники тока", href: "#"},
+        {name: "Аттенюаторы", href: "#"},
+        {name: "Фазовращатели", href: "#"},
+      ]
+    },
+    {
+      name: "БИС и ВЧ МИС", href: "#", subLinks: [{name: "Операционные усилители", href: "#"},
+        {name: "Буферные усилители", href: "#"},
+        {name: "Дифференциальные усилители", href: "#"},
+        {name: "Быстродействующие компараторы", href: "#"},
+        {name: "Операционные усилители с регулируемым коэффициентом усиления", href: "#"},
+        {name: "Логарифмические усилители", href: "#"},
+        {name: "Устройства выборки и хранения", href: "#"},
+        {name: "Измерители разности фаз", href: "#"},
+      ]
+    },
+    {
+      name: "Драйверы управления",
+      href: "#",
+      subLinks: [{name: "Упарвление фазовращателями и аттенюаторами", href: "#"},
+        {name: "Управление ферритовыми фазовращателями(ФФ)", href: "#"},
+        {name: "БИС управления ПЗС", href: "#"},
+      ]
+    },
   ]);
 
   processMenu1('#men3', [
-    {name: "men3 Link 1", href: "#", subLinks: [{name: "men3 Link 1.1", href: "#"},]},
-    {name: "men3 Link 2", href: "#", subLinks: [{name: "men3 Link 2.1", href: "#"},]},
-    {name: "men3 Link 3", href: "#", subLinks: [{name: "men3 Link 3.1", href: "#"},]},
+    {
+      name: "Диоды", href: "#", subLinks: [{name: "P-I-N фотодиоды большой площади", href: "#"},
+        {name: "Многоэлементные P-I-N фотодиоды", href: "#"},
+        {name: "Детекторы рентгеновского и гамма-излучения", href: "#"},
+      ]
+    },
+    {name: "ПЗС", href: "#", subLinks: [{name: "Линейные ПЗС", href: "#"}, {name: "Матричные ПЗС", href: "#"}]},
+    {name: "Фоточувствительные КМОП-матрицы", href: "#", subLinks: []},
   ]);
 
   processMenu1('#men4', [
-    {name: "men4 Link 1", href: "#"},
-    {name: "men4 Link 2", href: "#"},
-    {name: "men4 Link 3", href: "#"},
-    {name: "men4 Link 4", href: "#"},
-    {name: "men4 Link 5", href: "#"},
+    {
+      name: "СВЧ модули", href: "#", subLinks: [
+        {name: "Синтезаторы частоты (СВЧ)", href: "#"},
+        {name: "Генераторы, управляемые напряжением", href: "#"},
+        {name: "Широкополосные генераторы, управляемые напряжением", href: "#"},
+        {name: "Усилители мощности", href: "#"},
+        {name: "Широкополосные усилители", href: "#"},
+        {name: "Преобразователи частоты", href: "#"},
+        {name: "Управление амплитудными и фазовыми характеристиками", href: "#"},
+      ]
+    },
+    {name: "Модули силовой электроники", href: "#"},
+    {name: "Фотоприемные устройства", href: "#"},
   ]);
 });
 

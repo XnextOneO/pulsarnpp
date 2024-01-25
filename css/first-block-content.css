@@ -1224,31 +1224,19 @@
 }
 
 .menu {
-  width: 30%;
+  width: 33%;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  justify-content: space-between;
 }
 
 .menu .menLink {
   color: white;
   text-decoration: none;
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 16px;
 }
 
-.menLink {
-  font-size: 52px;
-}
 
-#men2 {
-  font-size: 22px;
-}
 
-#men3 {
-  font-size: 22px;
-}
-
-#men4 {
-  font-size: 22px;
-}
